@@ -35,7 +35,9 @@ def lose(power_pellet_active, touching_ghost):
     :return: bool - has the player lost the game?
     """
 
-    pass
+    if power_pellet_active == False and touching_ghost == True:
+        return True
+    return False
 
 
 def win(has_eaten_all_dots, power_pellet_active, touching_ghost):
