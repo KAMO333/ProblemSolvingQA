@@ -2,7 +2,7 @@
   "python.testing.unittestArgs": ["-v", "-s", "./python", "-p", "*test*.py"],
   "python.testing.pytestEnabled": true,
   "python.testing.unittestEnabled": false,
-  "python.testing.pytestArgs": ["python"],
+  "python.testing.pytestArgs": ["venv"],
   "cSpell.words": [
     "docstrings",
     "Exercism",
