@@ -3,7 +3,6 @@
 
 def is_criticality_balanced(temperature, neutrons_emitted):
     """Verify criticality is balanced.
-
     :param temperature: int or float - temperature value in kelvin.
     :param neutrons_emitted: int or float - number of neutrons emitted per second.
     :return: bool - is criticality balanced?
@@ -19,7 +18,6 @@ def is_criticality_balanced(temperature, neutrons_emitted):
 
 def reactor_efficiency(voltage, current, theoretical_max_power):
     """Assess reactor efficiency zone.
-
     :param voltage: int or float - voltage value.
     :param current: int or float - current value.
     :param theoretical_max_power: int or float - power that corresponds to a 100% efficiency.
