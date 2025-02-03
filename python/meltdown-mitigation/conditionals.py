@@ -1,6 +1,5 @@
 """Functions to prevent a nuclear meltdown."""
 
-
 def is_criticality_balanced(temperature, neutrons_emitted):
     """Verify criticality is balanced.
     :param temperature: int or float - temperature value in kelvin.
@@ -33,7 +32,6 @@ def reactor_efficiency(voltage, current, theoretical_max_power):
     (generated power/ theoretical max power)*100
     where generated power = voltage * current
     """
-
     pass
 
 
@@ -49,5 +47,4 @@ def fail_safe(temperature, neutrons_produced_per_second, threshold):
     2. 'NORMAL' -> `temperature * neutrons per second` +/- 10% of `threshold`
     3. 'DANGER' -> `temperature * neutrons per second` is not in the above-stated ranges
     """
-
     pass
