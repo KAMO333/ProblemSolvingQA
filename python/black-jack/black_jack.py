@@ -74,10 +74,11 @@ def is_blackjack(card_one, card_two):
     2.  'A' (ace card) = 11 (if already in hand)
     3.  '2' - '10' = numerical value.
     """
-    
-    if card_one == 'A' and card_two in ['Q', 'K', 'J', '10']:
+    ten_cards = ['Q', 'K', 'J', '10']
+
+    if card_one == 'A' and card_two in ten_cards:
         return True
-    elif card_one in ['Q', 'K', 'J', '10'] and card_two == 'A':
+    elif card_one in ten_cards and card_two == 'A':
         return True
     else:
         return False
