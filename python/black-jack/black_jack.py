@@ -18,10 +18,9 @@ def value_of_card(card):
 
     if card in ['J', 'Q', 'K']:
         return 10
-    elif card == 'A':
+    if card == 'A':
         return 1
-    else:
-        return int(card)
+    return int(card)
 
 
 def higher_card(card_one, card_two):
@@ -37,10 +36,9 @@ def higher_card(card_one, card_two):
 
     if value_of_card(card_one) != value_of_card(card_two):
         return str(max(value_of_card(card_one), value_of_card(card_two)))
-    elif value_of_card(card_one) == value_of_card(card_two):
+    if value_of_card(card_one) == value_of_card(card_two):
         return card_one, card_two
-    else:
-        return str(value_of_card(card_one)), str(value_of_card(card_two))
+    return str(value_of_card(card_one)), str(value_of_card(card_two))
 
 
 
@@ -54,16 +52,12 @@ def value_of_ace(card_one, card_two):
     2.  'A' (ace card) = 11 (if already in hand)
     3.  '2' - '10' = numerical value.
     """
-    if card_one is 'A' or card_two is 'A':
+    if card_one == 'A' or card_two == 'A':
         return 1
-    
     if value_of_card(card_one) + value_of_card(card_two) <= 10:
         return 11
-    else:
-        return 1
+    return 1
     
-
-
 def is_blackjack(card_one, card_two):
     """Determine if the hand is a 'natural' or 'blackjack'.
 
@@ -78,10 +72,9 @@ def is_blackjack(card_one, card_two):
 
     if card_one == 'A' and card_two in ten_cards:
         return True
-    elif card_one in ten_cards and card_two == 'A':
+    if card_one in ten_cards and card_two == 'A':
         return True
-    else:
-        return False
+    return False
 
 
 def can_split_pairs(card_one, card_two):
@@ -93,8 +86,7 @@ def can_split_pairs(card_one, card_two):
 
     if value_of_card(card_one) is value_of_card(card_two):
         return True
-    else:
-        return False
+    return False
 
 
 def can_double_down(card_one, card_two):
@@ -107,5 +99,4 @@ def can_double_down(card_one, card_two):
 
     if value_of_card(card_one) + value_of_card(card_two) in numbers:
         return True
-    else:
-        return False
+    return False
