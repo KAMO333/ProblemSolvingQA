@@ -26,7 +26,7 @@ def make_word_groups(vocab_words):
     produces the following string: 'en :: enclose :: enjoy :: enlighten'.
     """
 
-    pass
+    return " :: en".join(vocab_words)
 
 
 def remove_suffix_ness(word):
