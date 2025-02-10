@@ -25,8 +25,9 @@ def make_word_groups(vocab_words):
     For example: list('en', 'close', 'joy', 'lighten'),
     produces the following string: 'en :: enclose :: enjoy :: enlighten'.
     """
-
-    return " :: en".join(vocab_words)
+    print('whats this: ',vocab_words)
+    
+    return ' :: '.join(vocab_words)
 
 
 def remove_suffix_ness(word):
@@ -38,8 +39,11 @@ def remove_suffix_ness(word):
     For example: "heaviness" becomes "heavy", but "sadness" becomes "sad".
     """
 
-    pass
+    remove = word[:-4]
 
+    if remove.endswith('i'):
+      return remove.replace('i', 'y')
+    return remove
 
 def adjective_to_verb(sentence, index):
     """Change the adjective within the sentence to a verb.
