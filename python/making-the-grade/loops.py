@@ -74,7 +74,14 @@ def student_ranking(student_scores, student_names):
     :return: list - of strings in format ["<rank>. <student name>: <score>"].
     """
 
-    pass
+    results = []
+
+    for i, score in enumerate(student_scores):
+        for j, name in enumerate(student_names):
+            if i == j:
+                results.append(f"{i+1}. {name}: {score}")
+
+    return results
 
 
 def perfect_score(student_info):
