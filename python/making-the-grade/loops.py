@@ -23,7 +23,13 @@ def count_failed_students(student_scores):
     :return: int - count of student scores at or below 40.
     """
 
-    pass
+    failed = 0
+
+    for score in round_scores(student_scores):
+        if score <= 40:
+            failed += 1
+            
+    return failed
 
 
 def above_threshold(student_scores, threshold):
