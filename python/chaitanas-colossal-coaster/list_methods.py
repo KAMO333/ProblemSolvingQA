@@ -52,11 +52,8 @@ def remove_the_mean_person(queue, person_name):
     :param person_name: str - name of mean person.
     :return: list - queue update with the mean persons name removed.
     """
-    new_queue = queue.copy()
-
-    remove_person = new_queue.remove(person_name)
-
-    return remove_person
+    queue.remove(person_name)
+    return queue
 
 
 def how_many_namefellows(queue, person_name):
