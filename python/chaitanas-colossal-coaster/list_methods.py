@@ -16,9 +16,9 @@ def add_me_to_the_queue(express_queue, normal_queue, ticket_type, person_name):
     if ticket_type == 0:
         normal.append(person_name)
         return normal
-    else:
-        express.append(person_name)
-        return express
+    
+    express.append(person_name)
+    return express
 
 
 
