@@ -54,7 +54,7 @@ def approx_average_is_average(hand):
     """
     middle = hand[len(hand) // 2]
     
-    if hand[0] + hand[-1] / len(hand) == card_average(hand) or middle == card_average(hand):
+    if (hand[0] + hand[-1]) / 2 == card_average(hand) or middle == card_average(hand):
         return True
     return False
 
