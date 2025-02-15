@@ -63,7 +63,15 @@ def letter_grades(highest):
             86 <= "A" <= 100
     """
 
-    pass
+    start_threshold = 41
+    increment = (highest - 40) / 4
+
+    thresholds = []
+
+    for i in range(4):
+        thresholds.append(int(start_threshold + i * increment))
+
+    return thresholds
 
 
 def student_ranking(student_scores, student_names):
