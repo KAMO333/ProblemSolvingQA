@@ -25,9 +25,15 @@ def make_word_groups(vocab_words):
     For example: list('en', 'close', 'joy', 'lighten'),
     produces the following string: 'en :: enclose :: enjoy :: enlighten'.
     """
-    print('whats this: ',vocab_words)
+
+    first_word = vocab_words.pop(0)
     
-    return ' :: '.join(vocab_words)
+    results = ''
+
+    for word in vocab_words:
+        results += first_word + word + ' ' + '::' + ' '
+
+    return first_word + ' ' + '::' + ' ' + results[:-4]
 
 
 def remove_suffix_ness(word):
