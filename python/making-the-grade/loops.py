@@ -10,8 +10,8 @@ def round_scores(student_scores):
 
     new_scores = []
 
-    for i in student_scores:
-        new_scores.append(round(i))
+    for score in student_scores:
+        new_scores.append(round(score))
     
     return new_scores
 
@@ -42,9 +42,9 @@ def above_threshold(student_scores, threshold):
 
     best = []
 
-    for i in round_scores(student_scores):
-        if i >= threshold:
-            best.append(i)
+    for score in round_scores(student_scores):
+        if score >= threshold:
+            best.append(score)
 
     return best
 
@@ -68,8 +68,8 @@ def letter_grades(highest):
 
     thresholds = []
 
-    for i in range(4):
-        thresholds.append(int(start_threshold + i * increment))
+    for marks in range(4):
+        thresholds.append(int(start_threshold + marks * increment))
 
     return thresholds
 
@@ -84,10 +84,10 @@ def student_ranking(student_scores, student_names):
 
     results = []
 
-    for i, score in enumerate(student_scores):
-        for j, name in enumerate(student_names):
-            if i == j:
-                results.append(f"{i+1}. {name}: {score}")
+    for i_idex, score in enumerate(student_scores):
+        for j_index, name in enumerate(student_names):
+            if i_idex == j_index:
+                results.append(f"{i_idex+1}. {name}: {score}")
 
     return results
 
@@ -101,9 +101,9 @@ def perfect_score(student_info):
 
     results = []
 
-    for list in student_info:
-        if list[1] == 100:
-            results.append(list)
+    for student in student_info:
+        if student[1] == 100:
+            results.append(student)
             break
     
     return results[0] if len(results) == 1 else results
