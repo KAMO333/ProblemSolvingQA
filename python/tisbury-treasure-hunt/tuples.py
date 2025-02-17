@@ -30,7 +30,7 @@ def compare_records(azara_record, rui_record):
     azara_coords = tuple(azara_record[1])
     rui_coords = rui_record[1]
 
-    return True if azara_coords == rui_coords else False
+    return azara_coords == rui_coords
 
 
 def create_record(azara_record, rui_record):
