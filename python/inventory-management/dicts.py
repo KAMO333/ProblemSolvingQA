@@ -46,9 +46,12 @@ def decrement_items(inventory, items):
     """
 
     for product in  items:
+        if product not in inventory:
+            continue
         if product in inventory:
             inventory[product] -= 1
-        else:
+            
+        if inventory[product] < 0:
             inventory[product] = 0
     
     return inventory
@@ -76,6 +79,12 @@ def list_inventory(inventory):
     :param inventory: dict - an inventory dictionary.
     :return: list of tuples - list of key, value pairs from the inventory dictionary.
     """
+    results = []
 
-    pass
+    for product in inventory:
+        if inventory[product] == 0:
+            continue
+        results.append((product, inventory[product]))
+
+    return results
 
