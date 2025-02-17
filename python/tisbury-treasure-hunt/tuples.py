@@ -56,5 +56,11 @@ def clean_up(combined_record_group):
 
     (see HINTS.md for an example).
     """
+    
+    results = []
 
-    pass
+    for record in combined_record_group:
+        results.append(f"('{record[0]}', '{record[2]}', {record[3]}, '{record[4]}')")
+
+    return '\n'.join(results) + '\n'
+

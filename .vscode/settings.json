@@ -4,6 +4,7 @@
   "python.testing.unittestEnabled": false,
   "python.testing.pytestArgs": ["venv"],
   "cSpell.words": [
+    "azara",
     "Bucky",
     "Chaitana's",
     "docstrings",
@@ -16,9 +17,11 @@
     "Okoye",
     "pytest",
     "Pythontutor",
+    "Seacave",
     "subtests",
     "taskno",
     "Tchalla",
+    "Tisbury",
     "Ultron"
   ]
 }
