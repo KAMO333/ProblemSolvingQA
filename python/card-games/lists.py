@@ -11,7 +11,7 @@ def get_rounds(number):
     :return: list - current round and the two that follow.
     """
 
-    return [(number + i) for i in range(3)]
+    return [(number + round) for round in range(3)]
     
 
 def concatenate_rounds(rounds_1, rounds_2):
@@ -33,7 +33,7 @@ def list_contains_round(rounds, number):
     :return: bool - was the round played?
     """
 
-    return True if number in rounds else False
+    return number in rounds
 
 
 def card_average(hand):
@@ -54,7 +54,7 @@ def approx_average_is_average(hand):
     """
     middle = hand[len(hand) // 2]
     
-    if hand[0] + hand[-1] / len(hand) == card_average(hand) or middle == card_average(hand):
+    if (hand[0] + hand[-1]) / 2 == card_average(hand) or middle == card_average(hand):
         return True
     return False
 
@@ -66,7 +66,20 @@ def average_even_is_average_odd(hand):
     :return: bool - are even and odd averages equal?
     """
 
-    pass
+    even = []
+    odd = []
+
+    for index, card in enumerate(hand):
+        if index % 2 == 0:
+            even.append(card)
+        else:
+            odd.append(card)
+    
+    even_avg = sum(even) / len(even)
+    odd_avg = sum(odd) / len(odd)
+
+
+    return even_avg == odd_avg 
 
 
 def maybe_double_last(hand):
