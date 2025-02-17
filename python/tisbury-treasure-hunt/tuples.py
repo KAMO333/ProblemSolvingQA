@@ -7,7 +7,7 @@ def get_coordinate(record):
     :param record: tuple - with a (treasure, coordinate) pair.
     :return: str - the extracted map coordinate.
     """
-    pass
+    return record[1]
 
 
 def convert_coordinate(coordinate):
