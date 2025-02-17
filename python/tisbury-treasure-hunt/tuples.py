@@ -16,7 +16,7 @@ def convert_coordinate(coordinate):
     :param coordinate: str - a string map coordinate
     :return: tuple - the string coordinate split into its individual components.
     """
-    pass
+    return tuple(coordinate)
 
 
 def compare_records(azara_record, rui_record):
