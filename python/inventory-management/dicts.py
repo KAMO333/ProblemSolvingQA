@@ -45,7 +45,13 @@ def decrement_items(inventory, items):
     :return: dict - updated inventory with items decremented.
     """
 
-    pass
+    for product in  items:
+        if product in inventory:
+            inventory[product] -= 1
+        else:
+            inventory[product] = 0
+    
+    return inventory
 
 
 def remove_item(inventory, item):
@@ -55,8 +61,13 @@ def remove_item(inventory, item):
     :param item: str - item to remove from the inventory.
     :return: dict - updated inventory with item removed. Current inventory if item does not match.
     """
+    new_inventory = inventory.copy()
 
-    pass
+    for product in new_inventory.keys():
+        if product == item:
+            inventory.pop(product)
+
+    return inventory
 
 
 def list_inventory(inventory):
