@@ -9,7 +9,13 @@ def add_item(current_cart, items_to_add):
     :return: dict - the updated user cart dictionary.
     """
 
-    pass
+    for product in items_to_add:
+        if product in current_cart:
+            current_cart[product] += 1
+        else:
+            current_cart.setdefault(product, 1)
+
+    return current_cart
 
 
 def read_notes(notes):
