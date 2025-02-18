@@ -41,7 +41,7 @@ def update_recipes(ideas, recipe_updates):
     :return: dict - updated "recipe ideas" dict.
     """
 
-    pass
+    
 
 
 def sort_entries(cart):
