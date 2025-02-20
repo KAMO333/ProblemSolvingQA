@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="AnnalynsInfiltrationTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-02-20T11:58:18" hostname="pop-os" time="0.054">
+<testsuite name="AnnalynsInfiltrationTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-02-20T13:34:26" hostname="pop-os" time="0.053">
   <properties/>
-  <testcase name="The canSpy method returns false when everyone is sleeping" classname="AnnalynsInfiltrationTest" time="0.054"/>
+  <testcase name="The canSignalPrisoner method returns false when both prisoner and archer are awake" classname="AnnalynsInfiltrationTest" time="0.053"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
