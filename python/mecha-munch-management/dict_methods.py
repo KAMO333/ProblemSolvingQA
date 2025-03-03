@@ -40,10 +40,23 @@ def update_recipes(ideas, recipe_updates):
     :param recipe_updates: dict - dictionary with updates for the ideas section.
     :return: dict - updated "recipe ideas" dict.
     """
-
+    pass
     
+    # results_dict = {}
+
+    # new_recipe_updates = dict(recipe_updates)
+
+    # for key, value in ideas.items():
+    #     for same_key, new_value in new_recipe_updates.items():
+    #         if key == same_key:
+    #             results_dict[key] = value.update(new_value)
+    #         else:
+    #             results_dict[key] = value
+
+    # return results_dict
 
 
+        
 def sort_entries(cart):
     """Sort a users shopping cart in alphabetically order.
 
@@ -51,7 +64,7 @@ def sort_entries(cart):
     :return: dict - users shopping cart sorted in alphabetical order.
     """
 
-    pass
+    return dict(sorted(cart.items())) 
 
 
 def send_to_store(cart, aisle_mapping):
@@ -74,3 +87,10 @@ def update_store_inventory(fulfillment_cart, store_inventory):
     """
 
     pass
+
+
+
+
+
+
+

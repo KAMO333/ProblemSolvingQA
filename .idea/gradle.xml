@@ -5,7 +5,7 @@
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
         <option name="externalProjectPath" value="$PROJECT_DIR$/java/annalyns-infiltration" />
-        <option name="gradleJvm" value="#JAVA_HOME" />
+        <option name="gradleJvm" value="openjdk-23 (6)" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/java/annalyns-infiltration" />
@@ -14,7 +14,7 @@
       </GradleProjectSettings>
       <GradleProjectSettings>
         <option name="externalProjectPath" value="$PROJECT_DIR$/java/hello-world" />
-        <option name="gradleJvm" value="#JAVA_HOME" />
+        <option name="gradleJvm" value="openjdk-23 (6)" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/java/hello-world" />
@@ -23,7 +23,7 @@
       </GradleProjectSettings>
       <GradleProjectSettings>
         <option name="externalProjectPath" value="$PROJECT_DIR$/java/lasagna" />
-        <option name="gradleJvm" value="#JAVA_HOME" />
+        <option name="gradleJvm" value="openjdk-23 (6)" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/java/lasagna" />
@@ -32,7 +32,7 @@
       </GradleProjectSettings>
       <GradleProjectSettings>
         <option name="externalProjectPath" value="$PROJECT_DIR$/java/log-levels" />
-        <option name="gradleJvm" value="#JAVA_HOME" />
+        <option name="gradleJvm" value="openjdk-23 (6)" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/java/log-levels" />
@@ -41,7 +41,7 @@
       </GradleProjectSettings>
       <GradleProjectSettings>
         <option name="externalProjectPath" value="$PROJECT_DIR$/java/squeaky-clean" />
-        <option name="gradleJvm" value="#JAVA_HOME" />
+        <option name="gradleJvm" value="openjdk-23 (6)" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/java/squeaky-clean" />
