@@ -26,4 +26,10 @@ def isosceles(sides):
     return False
 
 def scalene(sides):
-    pass
+    
+    if greater_than_zero_sides(sides) and sum_of_two(sides):
+        if len(set(sides)) == 3:
+            return True
+        return False
+
+    return False
