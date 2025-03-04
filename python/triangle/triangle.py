@@ -1,5 +1,5 @@
 def greater_than_zero_sides(sides):
-    if sides[0] and sides[1] and sides[2] > 0: 
+    if sides[0] > 0 and sides[1] > 0 and sides[2] > 0: 
         return True
     return False
 
@@ -10,7 +10,6 @@ def sum_of_two(sides):
 
     return first_two >= sides[2] and second_and_last >= sides[0] and first_and_last >= sides[1]
         
-
 def equilateral(sides):
     
     if greater_than_zero_sides(sides) and sum_of_two(sides):
@@ -19,12 +18,12 @@ def equilateral(sides):
         return False
     return False
 
-
-
-
 def isosceles(sides):
-    pass
-
+    
+    if greater_than_zero_sides(sides) and sum_of_two(sides):
+        if len(set(sides)) <= 2:
+            return True
+    return False
 
 def scalene(sides):
     pass
