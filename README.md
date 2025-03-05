@@ -1,6 +1,6 @@
 # Python Problem Solving Practice
 
-Welcome to my repository where I practice problem-solving skills using Python and Java! This repo contains solutions to various coding challenges, primarily from [Exercism](https://exercism.io/tracks/python). The focus is on improving algorithm design, understanding data structures, and mastering Python programming.
+Welcome to my repository where I practice problem-solving skills using Python and Java! This repo contains solutions to various coding challenges, primarily from [Exercism](https://exercism.io/tracks/python). The focus is on improving algorithm design, understanding data structures, and mastering Python and Java programming.
 
 ## Challenges Included
 - Exercism Python track challenges
