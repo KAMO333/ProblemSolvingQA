@@ -2,7 +2,7 @@ def generate_chessboard_dict():
     chessboard = {}
 
     for i in range(1, 65):
-        chessboard[i] = 2**(i-1)
+        chessboard[i] = pow(2, (i-1))
 
     return chessboard
 
