@@ -7,7 +7,7 @@ Welcome to my repository where I practice problem-solving skills using Python an
 - Other algorithmic and problem-solving exercises
 
 ## Technologies Used
-- **Python**: The core language used for all challenges.
+- **Python** and **Java**: The core languages used for all challenges.
 - **No additional libraries** (unless specified in the challenge requirements).
 
 ## How to Use
