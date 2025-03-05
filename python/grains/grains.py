@@ -19,9 +19,7 @@ def square(number):
         if key == number:
             return value
     
-    
-
-
-
 def total():
-    pass
+    return sum(chessboard.values())
+
+    
