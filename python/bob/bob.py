@@ -5,4 +5,7 @@ def response(hey_bob):
     if remove_spaces.endswith("?"):
         return "Sure."
     
+    if remove_spaces.upper():
+        return "Whoa, chill out!"
+    
 
