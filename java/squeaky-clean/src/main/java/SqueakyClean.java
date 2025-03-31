@@ -13,6 +13,7 @@ class SqueakyClean {
             }
         }
 
+
         StringBuilder newResults = new StringBuilder();
 
         for (int j = 0; j < results.length(); j++) {
