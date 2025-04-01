@@ -15,6 +15,8 @@ class SqueakyClean {
 
         StringBuilder newResults = new StringBuilder();
 
+        String specialChars = "¡!@#$%^&*()-=+[]{}|;:'\",.<>/?";
+
         for (int j = 0; j < results.length(); j++) {
             if (results.charAt(j) == '4') {
                 newResults.append('a');
@@ -26,6 +28,7 @@ class SqueakyClean {
                 newResults.append('l');
             } else if (results.charAt(j) == '7') {
                 newResults.append('t');
+            } else if (specialChars.indexOf(results.charAt(j)) != -1){
             } else {
                 newResults.append(results.charAt(j));
             }
