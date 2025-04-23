@@ -31,6 +31,15 @@
         </option>
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/java/jedliks-toy-car" />
+        <option name="gradleJvm" value="21" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/java/jedliks-toy-car" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
         <option name="externalProjectPath" value="$PROJECT_DIR$/java/lasagna" />
         <option name="gradleJvm" value="21" />
         <option name="modules">
@@ -64,6 +73,15 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/java/squeaky-clean" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/java/tim-from-marketing" />
+        <option name="gradleJvm" value="21" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/java/tim-from-marketing" />
           </set>
         </option>
       </GradleProjectSettings>
