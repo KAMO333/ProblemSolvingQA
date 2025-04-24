@@ -20,7 +20,12 @@ public class JedliksToyCar {
     }
 
     public void drive() {
-        this.driven += 20;
-        this.battery -= 1;
+        if (this.battery != 0) {
+            this.driven += 20;
+            this.battery -= 1;
+        } else {
+            batteryDisplay();
+        }
+
     }
 }
