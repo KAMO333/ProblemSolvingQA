@@ -1,9 +1,10 @@
 public class JedliksToyCar {
     public int driven;
-    public String battery = "Battery at 100%";
+    public int battery;
 
     public JedliksToyCar() {
         this.driven = 0;
+        this.battery = 100;
     }
 
     public static JedliksToyCar buy() {
@@ -15,11 +16,11 @@ public class JedliksToyCar {
     }
 
     public String batteryDisplay() {
-        JedliksToyCar car1 = new JedliksToyCar();
-        return car1.battery;
+        return this.battery > 0 ? "Battery at " + this.battery + "%" : "Battery empty";
     }
 
     public void drive() {
         this.driven += 20;
+        this.battery -= 1;
     }
 }
