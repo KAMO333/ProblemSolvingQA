@@ -1,7 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="JedliksToyCarTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-04-24T13:01:14" hostname="pop-os" time="0.028">
+<testsuite name="JedliksToyCarTest" tests="10" skipped="0" failures="4" errors="0" timestamp="2025-04-24T13:46:36" hostname="pop-os" time="0.049">
   <properties/>
-  <testcase name="The batteryDisplay method shows full battery message on a new car" classname="JedliksToyCarTest" time="0.028"/>
+  <testcase name="The static buy method returns a new remote controlled car instance" classname="JedliksToyCarTest" time="0.026"/>
+  <testcase name="The distanceDisplay method shows 0 meters message on a new car" classname="JedliksToyCarTest" time="0.004"/>
+  <testcase name="The distanceDisplay method shows the correct message after driving once" classname="JedliksToyCarTest" time="0.001"/>
+  <testcase name="The batteryDisplay method shows the correct message after driving once" classname="JedliksToyCarTest" time="0.008">
+    <failure message="org.opentest4j.AssertionFailedError: &#10;expected: &quot;Battery at 99%&quot;&#10; but was: &quot;Battery at 100%&quot;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: 
+expected: &quot;Battery at 99%&quot;
+ but was: &quot;Battery at 100%&quot;
+	at java.base@21.0.6/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base@21.0.6/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at app//JedliksToyCarTest.battery_display_after_driving_once(JedliksToyCarTest.java:70)
+	at java.base@21.0.6/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base@21.0.6/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base@21.0.6/java.util.ArrayList.forEach(ArrayList.java:1596)
+</failure>
+  </testcase>
+  <testcase name="The distanceDisplay method shows the correct message after driving and draining all battery" classname="JedliksToyCarTest" time="0.002">
+    <failure message="org.opentest4j.AssertionFailedError: &#10;expected: &quot;Driven 2000 meters&quot;&#10; but was: &quot;Driven 2020 meters&quot;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: 
+expected: &quot;Driven 2000 meters&quot;
+ but was: &quot;Driven 2020 meters&quot;
+	at java.base@21.0.6/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base@21.0.6/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at app//JedliksToyCarTest.distance_display_when_battery_empty(JedliksToyCarTest.java:117)
+	at java.base@21.0.6/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base@21.0.6/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base@21.0.6/java.util.ArrayList.forEach(ArrayList.java:1596)
+</failure>
+  </testcase>
+  <testcase name="The batteryDisplay method shows battery empty after draining all battery" classname="JedliksToyCarTest" time="0.001">
+    <failure message="org.opentest4j.AssertionFailedError: &#10;expected: &quot;Battery empty&quot;&#10; but was: &quot;Battery at 100%&quot;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: 
+expected: &quot;Battery empty&quot;
+ but was: &quot;Battery at 100%&quot;
+	at java.base@21.0.6/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base@21.0.6/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at app//JedliksToyCarTest.battery_display_when_battery_empty(JedliksToyCarTest.java:100)
+	at java.base@21.0.6/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base@21.0.6/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base@21.0.6/java.util.ArrayList.forEach(ArrayList.java:1596)
+</failure>
+  </testcase>
+  <testcase name="The batteryDisplay method shows the correct battery percentage after driving multiple times" classname="JedliksToyCarTest" time="0.001">
+    <failure message="org.opentest4j.AssertionFailedError: &#10;expected: &quot;Battery at 77%&quot;&#10; but was: &quot;Battery at 100%&quot;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: 
+expected: &quot;Battery at 77%&quot;
+ but was: &quot;Battery at 100%&quot;
+	at java.base@21.0.6/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base@21.0.6/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at app//JedliksToyCarTest.battery_display_after_driving_multiple_times(JedliksToyCarTest.java:83)
+	at java.base@21.0.6/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base@21.0.6/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base@21.0.6/java.util.ArrayList.forEach(ArrayList.java:1596)
+</failure>
+  </testcase>
+  <testcase name="The static buy method returns each time a new remote controlled car instance" classname="JedliksToyCarTest" time="0.0"/>
+  <testcase name="The distanceDisplay method shows the correct message after driving multiple times" classname="JedliksToyCarTest" time="0.0"/>
+  <testcase name="The batteryDisplay method shows full battery message on a new car" classname="JedliksToyCarTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

@@ -1,14 +1,17 @@
 public class JedliksToyCar {
-    public String driven = "Driven 0 meters";
+    public int driven;
     public String battery = "Battery at 100%";
+
+    public JedliksToyCar() {
+        this.driven = 0;
+    }
 
     public static JedliksToyCar buy() {
         return new JedliksToyCar();
     }
 
     public String distanceDisplay() {
-        JedliksToyCar car = new JedliksToyCar();
-        return car.driven;
+        return "Driven " + this.driven + " meters";
     }
 
     public String batteryDisplay() {
@@ -17,6 +20,6 @@ public class JedliksToyCar {
     }
 
     public void drive() {
-        throw new UnsupportedOperationException("Please implement the JedliksToyCar.drive()  method");
+        this.driven += 20;
     }
 }
