@@ -26,6 +26,5 @@ public class JedliksToyCar {
         } else {
             batteryDisplay();
         }
-
     }
 }
