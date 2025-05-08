@@ -21,8 +21,6 @@ class NeedForSpeed {
     }
 
     public void drive(){
-
-
         if(battery != 0) {
             driven += speed;
             battery -= batteryDrain;
