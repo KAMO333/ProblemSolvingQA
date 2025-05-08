@@ -2,12 +2,14 @@ class NeedForSpeed {
     private int speed;
     private int batteryDrain;
     private int driven;
+    private int battery;
 
 
     public NeedForSpeed(int speed, int batteryDrain) {
         this.speed = speed;
         this.batteryDrain = batteryDrain;
         this.driven = 0;
+        this.battery = 100;
     }
 
     public boolean batteryDrained() {
@@ -19,7 +21,12 @@ class NeedForSpeed {
     }
 
     public void drive(){
-        driven += speed;
+
+
+        if(battery != 0) {
+            driven += speed;
+            battery -= batteryDrain;
+        }
 
     }
 

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="NeedForSpeedTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-05-08T15:26:30" hostname="pop-os" time="0.027">
+<testsuite name="NeedForSpeedTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-05-08T15:29:21" hostname="pop-os" time="0.027">
   <properties/>
-  <testcase name="The distanceDriven method returns 5 after driving once" classname="NeedForSpeedTest" time="0.027"/>
+  <testcase name="The distanceDriven method returns the correct distance after driving multiple times" classname="NeedForSpeedTest" time="0.027"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
