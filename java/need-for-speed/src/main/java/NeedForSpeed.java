@@ -18,7 +18,6 @@ class NeedForSpeed {
        } else  {
            return true;
        }
-
     }
 
     public int distanceDriven() {
@@ -30,7 +29,6 @@ class NeedForSpeed {
             driven += speed;
             battery -= batteryDrain;
         }
-
     }
 
     public static NeedForSpeed nitro() {

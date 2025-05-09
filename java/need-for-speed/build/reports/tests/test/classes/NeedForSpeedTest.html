@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.040s</div>
+<div class="counter">0.043s</div>
 <p>duration</p>
 </div>
 </td>
@@ -74,7 +74,7 @@
 <h3 class="failures">The canFinishRace method returns true when car can finish a race</h3>
 <span class="code">
 <pre>java.lang.UnsupportedOperationException: Please implement the RaceTrack.canFinishRace() method
-	at RaceTrack.canFinishRace(NeedForSpeed.java:46)
+	at RaceTrack.canFinishRace(NeedForSpeed.java:48)
 	at NeedForSpeedTest.car_can_finish_with_car_that_can_easily_finish(NeedForSpeedTest.java:170)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
@@ -87,7 +87,7 @@
 <h3 class="failures">The canFinishRace method returns true when car can just finish a race</h3>
 <span class="code">
 <pre>java.lang.UnsupportedOperationException: Please implement the RaceTrack.canFinishRace() method
-	at RaceTrack.canFinishRace(NeedForSpeed.java:46)
+	at RaceTrack.canFinishRace(NeedForSpeed.java:48)
 	at NeedForSpeedTest.car_can_finish_with_car_that_can_just_finish(NeedForSpeedTest.java:184)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
@@ -100,7 +100,7 @@
 <h3 class="failures">The canFinishRace method returns false when car cannot finish a race</h3>
 <span class="code">
 <pre>java.lang.UnsupportedOperationException: Please implement the RaceTrack.canFinishRace() method
-	at RaceTrack.canFinishRace(NeedForSpeed.java:46)
+	at RaceTrack.canFinishRace(NeedForSpeed.java:48)
 	at NeedForSpeedTest.car_can_finish_with_car_that_cannot_finish(NeedForSpeedTest.java:212)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
@@ -113,7 +113,7 @@
 <h3 class="failures">The canFinishRace method returns false when car just cannot finish a race</h3>
 <span class="code">
 <pre>java.lang.UnsupportedOperationException: Please implement the RaceTrack.canFinishRace() method
-	at RaceTrack.canFinishRace(NeedForSpeed.java:46)
+	at RaceTrack.canFinishRace(NeedForSpeed.java:48)
 	at NeedForSpeedTest.car_can_finish_with_car_that_just_cannot_finish(NeedForSpeedTest.java:198)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
@@ -126,7 +126,7 @@
 <h3 class="failures">The batteryDrained method returns true when nitro battery completely drained after driving</h3>
 <span class="code">
 <pre>java.lang.UnsupportedOperationException: Please implement the (static) NeedForSpeed.nitro() method
-	at NeedForSpeed.nitro(NeedForSpeed.java:33)
+	at NeedForSpeed.nitro(NeedForSpeed.java:35)
 	at NeedForSpeedTest.nitro_battery_completely_drains(NeedForSpeedTest.java:149)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
@@ -139,7 +139,7 @@
 <h3 class="failures">The batteryDrained method returns false when nitro car never drove</h3>
 <span class="code">
 <pre>java.lang.UnsupportedOperationException: Please implement the (static) NeedForSpeed.nitro() method
-	at NeedForSpeed.nitro(NeedForSpeed.java:33)
+	at NeedForSpeed.nitro(NeedForSpeed.java:35)
 	at NeedForSpeedTest.nitro_car_has_battery_not_drained(NeedForSpeedTest.java:118)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
@@ -152,7 +152,7 @@
 <h3 class="failures">The distanceDriven method returns the correct distance after driving a nitro car</h3>
 <span class="code">
 <pre>java.lang.UnsupportedOperationException: Please implement the (static) NeedForSpeed.nitro() method
-	at NeedForSpeed.nitro(NeedForSpeed.java:33)
+	at NeedForSpeed.nitro(NeedForSpeed.java:35)
 	at NeedForSpeedTest.nitro_car_has_correct_speed(NeedForSpeedTest.java:126)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
@@ -165,7 +165,7 @@
 <h3 class="failures">The distanceDriven method returns 0 on a new nitro car</h3>
 <span class="code">
 <pre>java.lang.UnsupportedOperationException: Please implement the (static) NeedForSpeed.nitro() method
-	at NeedForSpeed.nitro(NeedForSpeed.java:33)
+	at NeedForSpeed.nitro(NeedForSpeed.java:35)
 	at NeedForSpeedTest.nitro_car_has_not_driven_any_distance(NeedForSpeedTest.java:110)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
@@ -178,7 +178,7 @@
 <h3 class="failures">The batteryDrained method returns false when nitro battery did not completely drain after driving</h3>
 <span class="code">
 <pre>java.lang.UnsupportedOperationException: Please implement the (static) NeedForSpeed.nitro() method
-	at NeedForSpeed.nitro(NeedForSpeed.java:33)
+	at NeedForSpeed.nitro(NeedForSpeed.java:35)
 	at NeedForSpeedTest.nitro_has_correct_battery_drain(NeedForSpeedTest.java:135)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
@@ -207,25 +207,25 @@
 <tr>
 <td class="failures">The canFinishRace method returns true when car can just finish a race</td>
 <td class="failures">car_can_finish_with_car_that_can_just_finish()</td>
-<td class="failures">0.001s</td>
+<td class="failures">0s</td>
 <td class="failures">failed</td>
 </tr>
 <tr>
 <td class="failures">The canFinishRace method returns false when car cannot finish a race</td>
 <td class="failures">car_can_finish_with_car_that_cannot_finish()</td>
-<td class="failures">0s</td>
+<td class="failures">0.001s</td>
 <td class="failures">failed</td>
 </tr>
 <tr>
 <td class="failures">The canFinishRace method returns false when car just cannot finish a race</td>
 <td class="failures">car_can_finish_with_car_that_just_cannot_finish()</td>
-<td class="failures">0.001s</td>
+<td class="failures">0.002s</td>
 <td class="failures">failed</td>
 </tr>
 <tr>
 <td class="success">The distanceDriven method returns the correct distance after driving multiple times</td>
 <td class="success">drive_does_not_increase_distance_driven_when_battery_drained()</td>
-<td class="success">0s</td>
+<td class="success">0.001s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
@@ -243,7 +243,7 @@
 <tr>
 <td class="success">The batteryDrained method returns true when battery completely drained after driving</td>
 <td class="success">drive_until_battery_is_drained()</td>
-<td class="success">0.002s</td>
+<td class="success">0.001s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
@@ -255,7 +255,7 @@
 <tr>
 <td class="success">The distanceDriven method returns 0 on a new car</td>
 <td class="success">new_remote_control_car_has_not_driven_any_distance()</td>
-<td class="success">0.027s</td>
+<td class="success">0.028s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
@@ -267,31 +267,31 @@
 <tr>
 <td class="failures">The batteryDrained method returns true when nitro battery completely drained after driving</td>
 <td class="failures">nitro_battery_completely_drains()</td>
-<td class="failures">0s</td>
+<td class="failures">0.001s</td>
 <td class="failures">failed</td>
 </tr>
 <tr>
 <td class="failures">The batteryDrained method returns false when nitro car never drove</td>
 <td class="failures">nitro_car_has_battery_not_drained()</td>
-<td class="failures">0.005s</td>
+<td class="failures">0.006s</td>
 <td class="failures">failed</td>
 </tr>
 <tr>
 <td class="failures">The distanceDriven method returns the correct distance after driving a nitro car</td>
 <td class="failures">nitro_car_has_correct_speed()</td>
-<td class="failures">0.001s</td>
+<td class="failures">0s</td>
 <td class="failures">failed</td>
 </tr>
 <tr>
 <td class="failures">The distanceDriven method returns 0 on a new nitro car</td>
 <td class="failures">nitro_car_has_not_driven_any_distance()</td>
-<td class="failures">0s</td>
+<td class="failures">0.001s</td>
 <td class="failures">failed</td>
 </tr>
 <tr>
 <td class="failures">The batteryDrained method returns false when nitro battery did not completely drain after driving</td>
 <td class="failures">nitro_has_correct_battery_drain()</td>
-<td class="failures">0.001s</td>
+<td class="failures">0s</td>
 <td class="failures">failed</td>
 </tr>
 </table>
@@ -304,7 +304,7 @@
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 8.7</a> at 09 May 2025, 15:56:58</p>
+<a href="http://www.gradle.org">Gradle 8.7</a> at 09 May 2025, 16:04:57</p>
 </div>
 </div>
 </body>
