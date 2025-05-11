@@ -13,11 +13,11 @@ class NeedForSpeed {
     }
 
     public boolean batteryDrained() {
-       if (battery == 100 || battery >= batteryDrain) {
-           return false;
-       } else  {
-           return true;
-       }
+        if (battery == 100 || battery >= batteryDrain) {
+            return false;
+        } else  {
+            return true;
+        }
     }
 
     public int distanceDriven() {
@@ -32,7 +32,7 @@ class NeedForSpeed {
     }
 
     public static NeedForSpeed nitro() {
-        throw new UnsupportedOperationException("Please implement the (static) NeedForSpeed.nitro() method");
+       return new NeedForSpeed(50, 4);
     }
 }
 
