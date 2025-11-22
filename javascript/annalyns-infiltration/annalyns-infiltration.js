@@ -83,5 +83,12 @@ export function canFreePrisoner(
   prisonerIsAwake,
   petDogIsPresent,
 ) {
-  throw new Error('Remove this line and implement the function');
+   
+  if (knightIsAwake == false && archerIsAwake == false && prisonerIsAwake == true) {
+    return true
+  } else if (petDogIsPresent == true && archerIsAwake == false) {
+    return true
+  } else {
+    return false
+  }
 }
