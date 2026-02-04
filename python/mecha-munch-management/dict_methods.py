@@ -63,7 +63,13 @@ def send_to_store(cart, aisle_mapping):
     :return: dict - fulfillment dictionary ready to send to store.
     """
 
-    pass
+    fulfillment_cart = {}
+
+    for item in reversed(sorted(cart.keys())):
+        quantity = cart[item]
+        details = aisle_mapping[item]
+        fulfillment_cart[item] = [quantity] + details
+    return fulfillment_cart
 
 
 def update_store_inventory(fulfillment_cart, store_inventory):
@@ -74,7 +80,15 @@ def update_store_inventory(fulfillment_cart, store_inventory):
     :return: dict - store_inventory updated.
     """
 
-    pass
+    for item, details in fulfillment_cart.items():
+        order_quantity = details[0]
+
+        store_inventory[item][0] -= order_quantity
+        
+        if store_inventory[item][0] <= 0:
+            store_inventory[item][0] = "Out of Stock"
+            
+    return store_inventory
 
 
 
